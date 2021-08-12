@@ -1,0 +1,27 @@
+package com.locker;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
+public class TextManager 
+{
+	public static List<String> getAllFiles(String folderpath)
+	{
+		//Creating File object
+		File fl = new File(folderpath);
+		
+		//Getting all files into FileArray
+		File[] listOfFiles = fl.listFiles();
+		
+		//Declare a list to store file names
+		List<String> fileNames = new ArrayList<String>();
+		
+		for (File f:listOfFiles)
+			fileNames.add(f.getName());
+			
+			//return list
+			return fileNames;
+		
+	}
+}

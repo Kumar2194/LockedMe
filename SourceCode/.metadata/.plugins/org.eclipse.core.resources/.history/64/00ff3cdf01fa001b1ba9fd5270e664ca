@@ -1,0 +1,25 @@
+package com.locker;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class LockedProject 
+{
+    static final String folderpath="E:\\MyPhaseProject1\\Files";	
+	public static void main(String[] args) 
+{
+	//Code for deleting a file
+		String fileName;
+		Scanner obj = new Scanner(System.in);
+		System.out.println("Enter file name to be deleted : ");
+		fileName=obj.nextLine();
+		
+		boolean isDeleted = TextManager.deletFile(folderpath, fileName);
+		
+		if(isDeleted)
+			System.out.println("File deleted Successflly");
+		else
+			System.out.println("Either file not there or some access issued");
+}
+}

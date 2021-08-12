@@ -1,0 +1,12 @@
+package com.locker;
+
+public class LockedProject 
+{
+   static final String folderpath="E:\\MyPhaseProject1\\Files";	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

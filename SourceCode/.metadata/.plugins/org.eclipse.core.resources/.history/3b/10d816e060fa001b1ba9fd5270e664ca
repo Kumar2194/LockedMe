@@ -1,0 +1,25 @@
+package com.locker;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class LockedProject 
+{
+    static final String folderpath="E:\\MyPhaseProject1\\Files";	
+	public static void main(String[] args) 
+{
+	//Code for searching a file
+		String fileName;
+		Scanner obj = new Scanner(System.in);
+		System.out.println("Enter file name to be searched : ");
+		fileName=obj.nextLine();
+		
+		boolean isSearch = TextManager.searchFile(folderpath, fileName);
+		
+		if(isSearch)
+			System.out.println("File detected Successflly");
+		else
+			System.out.println("File not detected");
+}
+}
